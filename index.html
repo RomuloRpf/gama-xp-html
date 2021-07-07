@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <title>Página para Exercícios HTML | Gama Academy</title>
 
@@ -14,7 +15,7 @@
         }
     </style>
     -->
-    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
     <!--
     <script type="text/javascript">
         alert("Oi Mundo!");
@@ -23,51 +24,53 @@
     <script type="text/javascript" src="script.js"></script>
 
 </head>
+
 <body>
     <header>
-        <img src="https://discord.com/assets/ff41b628a47ef3141164bfedb04fb220.png" alt="Logo da empresa" title="Logo da empresa"/> 
+        <img src="https://discord.com/assets/ff41b628a47ef3141164bfedb04fb220.png" alt="Logo da empresa"
+            title="Logo da empresa" />
         <!-- alt - texto alternativo-->
     </header>
 
     <main>
         <h1>Título 1</h1>
         <p>Teste <strong>1 strong</strong></p>
-        
+
         <h2>Título 2</h2>
         <p>Teste <span>2 span</span></p>
-        
+
         <h3>Título 3</h3>
         <p>Teste 3</p>
-        
+
         <h4>Título 4</h4>
         <p>Teste 4</p>
-        
+
         <h5>Título 5</h5>
         <p>Teste 5</p>
-        
+
         <h6>Título 6</h6>
         <p>Teste 6</p>
 
-        <a href="https://www.google.com/?hl=pt-BR" title="Site do Google" target="_blank"> 
+        <a href="https://www.google.com/?hl=pt-BR" title="Site do Google" target="_blank">
             <!-- target fala onde ele deve abrir este link (na própria página,em uma nova aba(blank))-->
             Teste de Link
         </a>
 
         <p>
-            Estou no Curso de Html e quero 
+            Estou no Curso de Html e quero
             <a href="https://www.google.com/?hl=pt-BR" title="aprender mais pesquisando">
                 aprender mais!
             </a>
         </p>
 
         <a href="https://www.google.com/?hl=pt-BR" title="Site do Google" target="_blank">
-            <img src="https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"/>
+            <img src="https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" />
         </a>
 
         <br>
 
-        <img src="https://img1.gratispng.com/20180421/yve/kisspng-node-js-javascript-npm-express-js-sharp-5adc00b68160a0.9169331415243675425299.jpg" 
-        alt="Node logo" title="Node logo"/>
+        <img src="https://img1.gratispng.com/20180421/yve/kisspng-node-js-javascript-npm-express-js-sharp-5adc00b68160a0.9169331415243675425299.jpg"
+            alt="Node logo" title="Node logo" />
 
         <br>
 
@@ -82,7 +85,8 @@
         </ul>
 
         <!--Lista Ordenada-->
-        <ol start="3" type="A"> <!--Type pode mudar o indicador-->
+        <ol start="3" type="A">
+            <!--Type pode mudar o indicador-->
             <li>Item 1</li>
             <li>Item 2</li>
         </ol>
@@ -123,16 +127,55 @@
         <!--Usar o section com divs dentro é considerado boa prática-->
         <section>
             <div class="bloco-img" id="div1">
-                <img src="https://discord.com/assets/ff41b628a47ef3141164bfedb04fb220.png" alt="Logo da empresa" title="Logo da empresa"/> 
+                <img src="https://discord.com/assets/ff41b628a47ef3141164bfedb04fb220.png" alt="Logo da empresa"
+                    title="Logo da empresa" />
             </div>
             <div class="bloco-img" id="div2">
-                <img src="https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"/>
+                <img src="https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" />
             </div>
         </section>
 
+        <form action="#" method="POST">
+
+            <label for="campo1">Nome</label>
+            <input type="text" name="nome" id="campo1" />
+
+            <label for="campo2">Interesses de Estudo</label>
+            <select name="interesses" id="campo2">
+                <option value="1">Vendas</option>
+                <option value="2">Marketing</option>
+            </select>
+
+            <fieldset>
+                <legend>Interesses de Estudo</legend>
+
+                <label for="campo31">Vendas</label>
+                <input type="radio" name="interesses2" value="1" id="campo31"/>
+
+                <label for="campo32">Marketing</label>
+                <input type="radio" name="interesses2" value="2" id="campo32"/>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Interesses de Estudo 2</legend>
+
+                <label for="campo41">Vendas</label>
+                <input type="checkbox" name="interesses3" value="1" id="campo41"/>
+
+                <label for="campo42">Marketing</label>
+                <input type="checkbox" name="interesses3" value="2" id="campo42"/>
+
+            </fieldset>
+
+            <input type="submit" value="Enviar o formulário" />
+
+        </form>
+
     </main>
-    
+
     <footer></footer>
 
 </body>
+
 </html>
