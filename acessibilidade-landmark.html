@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 
     <title>Página para Exercícios HTML | Gama Academy</title>
@@ -31,7 +31,11 @@
     </header>
 
     <main role="main">
-        <p>
+        <button aria-label="Acesse o site oficial para saber mais" aria-labelledby="bsite">Saiba Mais</button>
+    
+        <p id="bsite">Site do lorem ipsum</p>
+
+        <p lang="en">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat congue nisi, ac interdum massa eleifend ac. Curabitur fringilla orci vel massa efficitur ullamcorper. Donec magna nibh, tempor a risus at, maximus tincidunt felis. Praesent sed ipsum tortor. Vivamus rutrum quam ex, vitae suscipit dui rutrum sit amet. Integer convallis viverra sollicitudin. Nullam a porttitor enim. Nulla vitae lacus quis leo rhoncus aliquet. Nam massa ligula, sagittis sagittis iaculis sit amet, imperdiet nec ligula. Donec sit amet erat pretium, porta justo ut, placerat mi. Quisque non lectus nec ipsum lobortis mattis in in massa. Integer nec blandit ipsum. Sed et risus turpis. Curabitur semper sagittis neque, at placerat velit.
         </p>
 
@@ -57,7 +61,7 @@
             <input type="radio" name="interesse" value="Programação"/>
             <label for="l">Programação</label>
             
-            <input type="submit" value="inscrever"/>
+            <input type="submit" value="inscrever" aria-label="Enviar as  informações"/>
 
         </form>
 
